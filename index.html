@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="sv">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <script src="https://unpkg.com/vue@3"></script>
+
+        <title>Vue Vecka 1</title>
+    </head>
+    <body>
+        <!-- Steg 1, interpolering, få data från VUE  -->
+        <div id="app" class="header">
+            <p>{{message}}</p>
+        </div>
+
+        <!-- Steg 2, använda template för att få ut html via VUE -->
+        <div id="template" class="center"></div>
+
+        <!-- Steg 3, funktioner med methods, attribut med v-bind, länk, event handler -->
+        <div id="random">
+            <!-- Inhämta info från en retur i en funktion -->
+            <h2>{{ outputMessage() }}</h2>
+            <button @click="refresh">Refresh Page</button>
+            <!-- Länkar -->
+            <p>Test<a :href="vueLink">Kolla in grymma skolan</a></p>
+        </div>
+
+        <!-- Steg 4, V-bind med class attribut -->
+        <div id="numberBind" class="center">
+            <!-- -Nedan ändrar vi klassens attribut genom att jämföra om värdet är strikt likadant mot det
+som är deklarerat i vue (Obs: tänk på att stylingen kommer från style.css därför ser ni skillnad),
+testa att skriva annat nummer -->
+            <span :class="{color: number === 42}">This is class attribute</span>
+        </div>
+
+        <!-- Steg 5 med style attribut -->
+        <div id="styleBind" class="center">
+            <!-- Nedan bestämmer vi attributets värde beroende på om något är true eller false
+            Är namnet strikt Richard eller Bertil mot vad variabeln name är deklarerad till i vue
+        så blir det true....  -->
+            <span
+                :style="{color: name == 'Richard' || name == 'Bertil' ? 'blue' : 'pink'}"
+                >This is style attribut</span
+            >
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>
