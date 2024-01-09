@@ -1,0 +1,196 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+   
+}
+html {
+    font-family: 'Oswald', sans-serif;
+  }
+
+.container{
+    display: flex;
+    justify-content: center;
+    background-color: #F4D03F;
+    background-image: linear-gradient(132deg, #F4D03F 0%, #16A085 100%);
+    
+
+    color: white;
+    align-items: center;
+    height:10vh;
+}
+
+.container h1{
+    font-size: 4rem;
+    font-family: sans-serif;
+
+}
+
+.ml3 {
+  font-weight: 900;
+  font-size: 3.5em;
+}
+
+/* Start */
+
+#app{
+    display: flex;
+    justify-content: center;
+    margin-top:20vh;
+}
+
+
+.header {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+    margin: 3rem auto;
+    border-radius: 10px;
+    padding: 1rem;
+    background-color: #254034;
+    color: white;
+    text-align: center;
+    width: 90%;
+    max-width: 40rem;
+  }
+  
+  #img{
+   align-items: center;
+   margin: 0 auto;    
+   width:20%;
+  }
+  #random {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+    margin: 3rem auto;
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+    width: 90%;
+    max-width: 40rem;
+  }
+  
+  #random h2 {
+    font-size: 2rem;
+    border-bottom: 4px solid #ccc;
+    color:  #254034;
+    margin: 0 0 1rem 0;
+  }
+  
+  #random p {
+    font-size: 1.25rem;
+    font-weight: bold;
+    border: 1px solid  #254034;
+    background-color:  #254034;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 25px;
+    margin-top: 2vh;
+  }
+  #random a {
+  color: white;
+  }
+  
+  #random input {
+    font: inherit;
+    border: 1px solid #ccc;
+  }
+  
+  #random input:focus {
+    outline: none;
+    border-color:  #254034;
+    background-color: #d7fdeb;
+  }
+  
+  #random button {
+    font-size: 1.25rem;
+    font-weight: bold;
+    border: 1px solid  #254034;
+    background-color:  #254034;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 25px;
+  }
+  
+  #random button:hover,
+  #random button:active {
+    background-color: #ec3169;
+    border-color: #ec3169;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.26);
+  }
+  
+  .center{
+    display: flex;
+    justify-content: center;
+  }
+
+  .color{
+    font-size: 36px;
+    color:red;
+  }
+
+  #styleBind{
+    font-size: 36px;
+  }
+
+  /* MyTasks */
+  
+#myTask {
+  
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  margin:0 auto;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  margin-top: 10vh;
+  margin-bottom:10vh;
+}
+#myTask h2 {
+  font-size: 2rem;
+  border-bottom: 4px solid #ccc;
+  color: #254034;
+  margin: 0 0 1rem 0;
+}
+
+#myTask ul {
+  list-style: none;
+  margin: 1rem 0;
+  padding: 0;
+}
+
+#myTask li {
+  margin: 1rem 0;
+  font-size: 1.25rem;
+  font-weight: bold;
+  background-color: #254034;
+  padding: 0.5rem;
+  color: white;
+  border-radius: 25px;
+}
+
+#myTask input {
+  font: inherit;
+  border: 1px solid #ccc;
+}
+
+#myTask input:focus {
+  outline: none;
+  border-color: #254034;
+  background-color: #d7fdeb;
+}
+
+#myTask button {
+  font: inherit;
+  cursor: pointer;
+  border-radius: 10px;
+  border: 1px solid #ff0077;
+  background-color: #ff0077;
+  color: white;
+  padding: 0.05rem 1rem;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.26);
+  margin-left:3vw;
+}
+
+#myTask button:hover,
+#myTask button:active {
+  background-color: #ec3169;
+  border-color: #ec3169;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.26);
+}
